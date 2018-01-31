@@ -1,0 +1,485 @@
+<ion-view view-title="Help AstroCatalogue">
+  <ion-content ng-class="{expanded: $scope.isExpanded}" class="animate-fade-slide-in">
+    <div style="font-size: 8px; margin-left: 5px;">
+      SAGUARO ASTRONOMY CLUB DATABASE VERSION 8.1<br />
+      dated March 22, 2010<br />
+      <br /><br />
+
+      This compilation of data was begun in an effort to provide a comprehensive observing list for use at the eyepiece of a modest amateur telescope. This data is released for private use of anyone who wishes to use this database. <br /><br />
+
+      The members of the Saguaro Astronomy Club (pronounced sa-war-oh) of Phoenix, Arizona have provided much of the effort to compile this database. However, it could not have been completed without the skill of a variety of people. There is a listing of folks in the read me file who have helped with this database, thank you to all.<br /><br />
+
+      To align the information in this document correctly, use a non-proportional font, such as Courier.<br /><br />
+
+      A description of the fields and what data they contain follows:<br /><br />
+
+      Field Number: 1 Name: OBJECT Size: 17<br />
+      Object name, usually the NGC number is in field #1, but for objects with no NGC value the alphabetical name used is listed below. These abbreviations are also used in field #2 as an OTHER name for some objects.<br /><br />
+
+      <div class="row"><div class="col col-20">3C</div><div class="col">Third Cambridge Catalog of Radio Wave Sources</div></div>
+      <div class="row"><div class="col col-20">Abell</div><div class="col">George Abell (planetary nebulae and galaxy clusters)</div></div>
+      <div class="row"><div class="col col-20">ADS</div><div class="col">Aitken Double Star catalog</div></div>
+      <div class="row"><div class="col col-20">AM</div><div class="col">Arp-Madore (globular clusters)</div></div>
+      <div class="row"><div class="col col-20">Antalova</div><div class="col">(open clusters)</div></div>
+      <div class="row"><div class="col col-20">Ap</div><div class="col">Apriamasvili (planetary nebulae)</div></div>
+      <div class="row"><div class="col col-20">Arp</div><div class="col">Halton Arp (interacting galaxies)</div></div>
+      <div class="row"><div class="col col-20">Bark</div><div class="col">Barkhatova (open clusters)</div></div>
+      <div class="row"><div class="col col-20">B</div><div class="col">Barnard (dark nebulae)</div></div>
+      <div class="row"><div class="col col-20">Basel</div><div class="col">(open clusters)</div></div>
+      <div class="row"><div class="col col-20">BD</div><div class="col">Bonner Durchmusterung (stars)</div></div>
+      <div class="row"><div class="col col-20">Berk</div><div class="col">Berkeley (open clusters)</div></div>
+      <div class="row"><div class="col col-20">Be</div><div class="col">Bernes (dark nebulae)</div></div>
+      <div class="row"><div class="col col-20">Biur</div><div class="col">Biurakan (open clusters)</div></div>
+      <div class="row"><div class="col col-20">Blanco</div><div class="col">(open clusters)</div></div>
+      <div class="row"><div class="col col-20">Bochum</div><div class="col">(open clusters)</div></div>
+      <div class="row"><div class="col col-20">Ced</div><div class="col">Cederblad (bright nebulae)</div></div>
+      <div class="row"><div class="col col-20">CGCG</div><div class="col">Catalog of Galaxies and Clusters of Galaxies</div></div>
+      <div class="row"><div class="col col-20">Cr</div><div class="col">Collinder (open clusters)</div></div>
+      <div class="row"><div class="col col-20">Czernik</div><div class="col">(open clusters)</div></div>
+      <div class="row"><div class="col col-20">DDO</div><div class="col">David Dunlap Observatory (dwarf galaxies)</div></div>
+      <div class="row"><div class="col col-20">Do</div><div class="col">Dolidze (open clusters)</div></div>
+      <div class="row"><div class="col col-20">DoDz</div><div class="col">Dolidze-Dzimselejsvili (open clusters)</div></div>
+      <div class="row"><div class="col col-20">Dun</div><div class="col">Dunlop (Southern objects of all types)</div></div>
+      <div class="row"><div class="col col-20">ESO</div><div class="col">European Southern Observatory (Southern objects)</div></div>
+      <div class="row"><div class="col col-20">Fein</div><div class="col">Feinstein (open clusters)</div></div>
+      <div class="row"><div class="col col-20">Frolov</div><div class="col">(open clusters)</div></div>
+      <div class="row"><div class="col col-20">Gum</div><div class="col">(bright nebulae)</div></div>
+      <div class="row"><div class="col col-20">H</div><div class="col">William Herschel (globular clusters)</div></div>
+      <div class="row"><div class="col col-20">Haffner</div><div class="col">(open clusters)</div></div>
+      <div class="row"><div class="col col-20">Harvard</div><div class="col">(open clusters)</div></div>
+      <div class="row"><div class="col col-20">Hav-Moffat</div><div class="col">Havermeyer and Moffat (open clusters)</div></div>
+      <div class="row"><div class="col col-20">He</div><div class="col">Henize (planetary nebulae)</div></div>
+      <div class="row"><div class="col col-20">Hogg</div><div class="col">(open clusters)</div></div>
+      <div class="row"><div class="col col-20">Ho</div><div class="col">Holmberg (galaxies)</div></div>
+      <div class="row"><div class="col col-20">HP</div><div class="col">Haute Provence (globular clusters)</div></div>
+      <div class="row"><div class="col col-20">Hu</div><div class="col">Humason (planetary nebulae)</div></div>
+      <div class="row"><div class="col col-20">IC</div><div class="col">1st and 2nd Index Catalogs to the NGC (All types of objects except dark nebulae)</div></div>
+      <div class="row"><div class="col col-20">Isk</div><div class="col">Iskudarian (open clusters)</div></div>
+      <div class="row"><div class="col col-20">J</div><div class="col">Jonckheere (planetary nebulae)</div></div>
+      <div class="row"><div class="col col-20">K</div><div class="col">Kohoutek (planetary nebulae)</div></div>
+      <div class="row"><div class="col col-20">Kemble</div><div class="col">Father Lucian Kemble (asterisms)</div></div>
+      <div class="row"><div class="col col-20">King</div><div class="col">(open clusters)</div></div>
+      <div class="row"><div class="col col-20">Kr</div><div class="col">Krasnogorskaja (planetary nebulae)</div></div>
+      <div class="row"><div class="col col-20">Lac</div><div class="col">Lacaille (globular clusters)</div></div>
+      <div class="row"><div class="col col-20">Loden</div><div class="col">(open clusters)</div></div>
+      <div class="row"><div class="col col-20">LBN</div><div class="col">Lynds (bright nebula)</div></div>
+      <div class="row"><div class="col col-20">LDN</div><div class="col">Lynds (dark nebulae)</div></div>
+      <div class="row"><div class="col col-20">NPM1G</div><div class="col">Northern Proper Motion, 1st part, Galaxies</div></div>
+      <div class="row"><div class="col col-20">Lynga</div><div class="col">(open clusters)</div></div>
+      <div class="row"><div class="col col-20">M</div><div class="col">Messier (all types of objects except dark nebula)</div></div>
+      <div class="row"><div class="col col-20">MCG </div><div class="col">Morphological Catalog of Galaxies</div></div>
+      <div class="row"><div class="col col-20">Me</div><div class="col">Merrill (plantary nebulae)</div></div>
+      <div class="row"><div class="col col-20">Mrk</div><div class="col">Markarian (open clusters and galaxies)</div></div>
+      <div class="row"><div class="col col-20">Mel</div><div class="col">Melotte (open clusters)</div></div>
+      <div class="row"><div class="col col-20">M1 thru M4 </div><div class="col">Minkowski (planetary nebulae)</div></div>
+      <div class="row"><div class="col col-20">New</div><div class="col">&quot;New&quot; galaxies in the Revised Shapley-Ames Catalog</div></div>
+      <div class="row"><div class="col col-20">NGC</div><div class="col">New General Catalog of Nebulae &amp; Clusters of Stars. (All types of objects except dark nebulae)</div></div>
+      <div class="row"><div class="col col-20">Pal</div><div class="col">Palomar (globular clusters)</div></div>
+      <div class="row"><div class="col col-20">PB</div><div class="col">Peimbert and Batiz (planetary nebulae)</div></div>
+      <div class="row"><div class="col col-20">PC</div><div class="col">Peimbert and Costero (planetary nebulae)</div></div>
+      <div class="row"><div class="col col-20">Pismis </div><div class="col">(open clusters)</div></div>
+      <div class="row"><div class="col col-20">PK</div><div class="col">Perek &amp; Kohoutek (planetary nebulae)</div></div>
+      <div class="row"><div class="col col-20">RCW</div><div class="col">Rodgers, Campbell, &amp; Whiteoak (bright nebulae)</div></div>
+      <div class="row"><div class="col col-20">Roslund</div><div class="col">(open clusters)</div></div>
+      <div class="row"><div class="col col-20">Ru</div><div class="col">Ruprecht (open clusters)</div></div>
+      <div class="row"><div class="col col-20">Sa</div><div class="col">Sandqvist (dark nebulae)</div></div>
+      <div class="row"><div class="col col-20">Sher</div><div class="col">(open clusters)</div></div>
+      <div class="row"><div class="col col-20">Sh</div><div class="col">Sharpless (bright nebulae)</div></div>
+      <div class="row"><div class="col col-20">SL</div><div class="col">Sandqvist &amp; Lindroos (dark nebulae)</div></div>
+      <div class="row"><div class="col col-20">SL</div><div class="col">Shapley &amp; Lindsay (clusters in LMC)</div></div>
+      <div class="row"><div class="col col-20">Steph </div><div class="col">Stephenson (open clusters)</div></div>
+      <div class="row"><div class="col col-20">Stock</div><div class="col">(open clusters)</div></div>
+      <div class="row"><div class="col col-20">Ter</div><div class="col">Terzan (globular clusters)</div></div>
+      <div class="row"><div class="col col-20">Tombaugh</div><div class="col">(open clusters)</div></div>
+      <div class="row"><div class="col col-20">Ton</div><div class="col">Tonantzintla (globular clusters)</div></div>
+      <div class="row"><div class="col col-20">Tr</div><div class="col">Trumpler (open clusters)</div></div>
+      <div class="row"><div class="col col-20">UGC</div><div class="col">Uppsala General Catalog (galaxies)</div></div>
+      <div class="row"><div class="col col-20">UGCA</div><div class="col">Uppsala General Catalog, Addendum (galaxies)</div></div>
+      <div class="row"><div class="col col-20">UKS</div><div class="col">United Kingdom Schmidt (globular clusters)</div></div>
+      <div class="row"><div class="col col-20">Upgren</div><div class="col">(open clusters)</div></div>
+      <div class="row"><div class="col col-20">V V</div><div class="col">Vorontsov-Velyaminov (interacting galaxies)</div></div>
+      <div class="row"><div class="col col-20">vdB</div><div class="col">van den Bergh (open clusters, bright nebulae)</div></div>
+      <div class="row"><div class="col col-20">vdBH</div><div class="col">van den Bergh &amp; Herbst (bright nebulae)</div></div>
+      <div class="row"><div class="col col-20">vdB-Ha</div><div class="col">van den Bergh-Hagen (open clusters)</div></div>
+      <div class="row"><div class="col col-20">Vy</div><div class="col">Vyssotsky (planetary nebulae)</div></div>
+      <div class="row"><div class="col col-20">Waterloo</div><div class="col">(open clusters)</div></div>
+      <div class="row"><div class="col col-20">Winnecke</div><div class="col">Double Star (Messier 40)</div></div>
+      <div class="row"><div class="col col-20">ZwG</div><div class="col">Zwicky (galaxies)</div></div>
+
+
+
+
+      Field Number: 2 Name: OTHER Size: 18<br />
+      Other catalog designations by which this object may be known. The same abbreviations as the OBJECT field are used in this field. The 'M' designations for Messier objects are in this field.<br /><br />
+
+
+      Field Number: 3 Name: TYPE Size: 5<br />
+      Type of object. The code that applies is:<br /><br />
+
+      ASTER Asterism<br />
+      BRTNB Bright Nebula<br />
+      CL+NB Cluster with Nebulosity<br />
+      DRKNB Dark Nebula<br />
+      GALCL Galaxy cluster<br />
+      GALXY Galaxy<br />
+      GLOCL Globular Cluster<br />
+      GX+DN Diffuse Nebula in a Galaxy<br />
+      GX+GC Globular Cluster in a Galaxy<br />
+      G+C+N Cluster with Nebulosity in a Galaxy<br />
+      LMCCN Cluster with Nebulosity in the LMC<br />
+      LMCDN Diffuse Nebula in the LMC<br />
+      LMCGC Globular Cluster in the LMC<br />
+      LMCOC Open cluster in the LMC<br />
+      NONEX Nonexistent<br />
+      OPNCL Open Cluster<br />
+      PLNNB Planetary Nebula<br />
+      SMCCN Cluster with Nebulosity in the SMC<br />
+      SMCDN Diffuse Nebula in the SMC<br />
+      SMCGC Globular Cluster in the SMC<br />
+      SMCOC Open cluster in the SMC<br />
+      SNREM Supernova Remnant<br />
+      QUASR Quasar<br />
+      #STAR # Stars (#=1, 2, 3, 4, 5, etc.)<br /><br />
+
+
+      Field Number: 4 Name: CON Size: 3<br />
+      Constellation in which the object is found in IAU format, given in the table below. Only upper case abbreviations are used for ease of programming using case-sensitive commands.<br /><br />
+
+      <div class="row">
+      <div class="col">ANDROMEDA AND </div>
+      <div class="col">ANTLIA ANT </div>
+      </div>
+      <div class="row">
+      <div class="col">APUS APS </div>
+      <div class="col">AQUARIUS AQR </div>
+      </div>
+      <div class="row">
+      <div class="col">AQUILA AQL </div>
+      <div class="col">ARA ARA </div>
+      </div>
+      <div class="row">
+      <div class="col">ARIES ARI </div>
+      <div class="col">AURIGA AUR </div>
+      </div>
+      <div class="row">
+      <div class="col">BOOTES BOO </div>
+      <div class="col">CAELUM CAE </div>
+      </div>
+      <div class="row">
+      <div class="col">CAMELOPARDALIS CAM </div>
+      <div class="col">CANCER CNC </div>
+      </div>
+      <div class="row">
+      <div class="col">CANES VENATICI </div>
+      <div class="col">CANIS MAJOR CMA </div>
+      </div>
+      <div class="row">
+      <div class="col">CANIS MINOR CMI </div>
+      <div class="col">CAPRICORNUS CAP </div>
+      </div>
+      <div class="row">
+      <div class="col">CARINA CAR PAVO PAV</div>
+      <div class="col">CASSIOPEIA CAS </div>
+      </div>
+      <div class="row">
+      <div class="col">CENTAURUS CEN </div>
+      <div class="col">CEPHEUS CEP </div>
+      </div>
+      <div class="row">
+      <div class="col">CETUS CET </div>
+      <div class="col">CHAMAELEON CHA </div>
+      </div>
+      <div class="row">
+      <div class="col">CIRCINUS CIR </div>
+      <div class="col">COLUMBA COL </div>
+      </div>
+      <div class="row">
+      <div class="col">COMA BERENICES COM </div>
+      <div class="col">CORONA AUSTRALIS CRA </div>
+      </div>
+      <div class="row">
+      <div class="col">CORONA BOREALIS CRB </div>
+      <div class="col">CORVUS CRV </div>
+      </div>
+      <div class="row">
+      <div class="col">CRATER CRT </div>
+      <div class="col">CRUX CRU </div>
+      </div>
+      <div class="row">
+      <div class="col">CVN NORMA NOR</div>
+      <div class="col">CYGNUS CYG </div>
+      </div>
+      <div class="row">
+      <div class="col">DELPHINUS DEL </div>
+      <div class="col">DORADO DOR </div>
+      </div>
+      <div class="row">
+      <div class="col">DRACO DRA </div>
+      <div class="col">EQUULEUS EQU </div>
+      </div>
+      <div class="row">
+      <div class="col">ERIDANUS ERI </div>
+      <div class="col">FORNAX FOR </div>
+      </div>
+      <div class="row">
+      <div class="col">GEMINI GEM </div>
+      <div class="col">GRUS GRU URSA </div>
+      </div>
+      <div class="row">
+      <div class="col">HERCULES HER </div>
+      <div class="col">HOROLOGIUM HOR </div>
+      </div>
+      <div class="row">
+      <div class="col">HYDRA HYA </div>
+      <div class="col">HYDRUS HYI </div>
+      </div>
+      <div class="row">
+      <div class="col">INDUS IND </div>
+      <div class="col">LACERTA LAC</div>
+      </div>
+      <div class="row">
+      <div class="col">LEO LEO</div>
+      <div class="col">LEO MINOR LMI</div>
+      </div>
+      <div class="row">
+      <div class="col">LEPUS LEP</div>
+      <div class="col">LIBRA LIB</div>
+      </div>
+      <div class="row">
+      <div class="col">LUPUS LUP</div>
+      <div class="col">LYNX LYN</div>
+      </div>
+      <div class="row">
+      <div class="col">LYRA LYR</div>
+      <div class="col">MAJOR UMA</div>
+      </div>
+      <div class="row">
+      <div class="col">MENSA MEN</div>
+      <div class="col">MICROSCOPIUM MIC</div>
+      </div>
+      <div class="row">
+      <div class="col">MONOCEROS MON</div>
+      <div class="col">MUSCA MUS</div>
+      </div>
+      <div class="row">
+      <div class="col">OCTANS OCT</div>
+      <div class="col">OPHIUCHUS OPH</div>
+      </div>
+      <div class="row">
+      <div class="col">ORION ORI</div>
+      <div class="col">PEGASUS PEG</div>
+      </div>
+      <div class="row">
+      <div class="col">PERSEUS PER</div>
+      <div class="col">PHOENIX PHE</div>
+      </div>
+      <div class="row">
+      <div class="col">PICTOR PIC</div>
+      <div class="col">PISCES AUSTRINUS PSA</div>
+      </div>
+      <div class="row">
+      <div class="col">PISCES PSC</div>
+      <div class="col">PUPPIS PUP</div>
+      </div>
+      <div class="row">
+      <div class="col">PYXIS PYX</div>
+      <div class="col">RETICULUM RET</div>
+      </div>
+      <div class="row">
+      <div class="col">SAGITTA SGE</div>
+      <div class="col">SAGITTARIUS SGR</div>
+      </div>
+      <div class="row">
+      <div class="col">SCORPIUS SCO</div>
+      <div class="col">SCULPTOR SCL</div>
+      </div>
+      <div class="row">
+      <div class="col">SCUTUM SCT</div>
+      <div class="col">SERPENS SER</div>
+      </div>
+      <div class="row">
+      <div class="col">SEXTANS SEX</div>
+      <div class="col">TAURUS TAU</div>
+      </div>
+      <div class="row">
+      <div class="col">TELESCOPIUM TEL</div>
+      <div class="col">TRIANGULUM AUSTRALE TRA</div>
+      </div>
+      <div class="row">
+      <div class="col">TRIANGULUM TRI</div>
+      <div class="col">TUCANA TUC</div>
+      </div>
+      <div class="row">
+      <div class="col">URSA MINOR UMI</div>
+      <div class="col">VELA VEL</div>
+      </div>
+      <div class="row">
+      <div class="col">VIRGO VIR</div>
+      <div class="col">VOLANS VOL</div>
+      </div>
+      <div class="row">
+      <div class="col">VULPECULA VUL<td></div>
+      </div>
+
+        <br /><br />
+
+
+        Field Number: 5 Name: R.A. Size: 7 <br />
+        Right Ascension of the object in equinox 2000.0 coordinates. The RA is in the form XX XX.X, such as 14 34.8 or 05 04.7. Leading zeros are present so that a sort of the data will be numerically correct.<br /><br />
+
+
+        Field Number: 6 Name: DEC Size: 6<br />
+        Declination of the object in equinox 2000.0 coordinates. The DEC is in the form +/-XX XX, such as +48 10 or -88 04. Use the sign and leading zeros. The declination is given in degrees and minutes.<br /><br />
+
+
+        Field Number: 7 Name: MAG Size: 4<br />
+        Magnitude to nearest tenth in the form XX.X, such as 12.3. There are many objects which have no published magnitude, they have been assigned a magnitude of 99.9. Dark nebulae obviously have no magnitude, so we assigned them a mag of 79.9 to differentiate them from objects with no magnitude given. The reason we chose large values for objects without magnitudes is that a sort would find 0.0 or &quot;&quot; as a large value of brightness. <br /><br />
+
+
+        Field Number: 8 Name: SUBR Size: 4<br />
+        Surface brightness as given in the Reference Catalog of Galaxies 3. Dr. Harold Corwin calculated these values of surface brightness and has supplied them to us, along with much other valuable galaxy data.<br /><br />
+
+
+        Field Number: 9 Name: U2K Size: 3<br />
+        The charts in the first release of Uranometria 2000.0 that map the area of sky in which the object is located. It is not guaranteed that all objects plotted on U2000 are contained in the database.<br /><br />
+
+
+        Field Number: 10 Name: TI Size: 2<br />
+        The charts in the Tirion Sky Atlas 2000.0 that map the area of sky in which the object is located. This is included so that a less detailed view of the area will be available to star hoppers.<br /><br />
+
+
+        Field Number: 11 Name: SIZE_MAX Size: 8<br />
+        The large dimension of the object. A lower case &quot;m&quot; was used for arcminutes and a lower case &quot;s&quot; was used for arcseconds. In general, only Planetary Nebulae have sizes in arcseconds. A lower case &quot;d&quot; is used for degrees.<br /><br />
+
+
+        Field Number: 12 Name: SIZE_MIN Size: 8<br />
+        The small dimension of the object. A lower case &quot;m&quot; was used for arcminutes and a lower case &quot;s&quot; was used for arcseconds.<br /><br />
+
+
+        Field Number: 13 Name: PA Size: 3<br />
+        The Position Angle of an elongated object. The value is in degrees, starting with north as zero degrees and progressing clockwise from north. So, an object which William Herschel would have described as &quot;Elong. NE-SW&quot; is elongated in a PA of 45 degrees.<br /><br />
+
+
+        Field Number: 14 Name: CLASS Size: 11<br />
+        Several professional classification schemes are contained here.<br /><br />
+
+        ----Trumpler type for open clusters-----<br /><br />
+
+        Concentration<br />
+        I. Detached, strong concentration toward the center<br />
+        II. Detached, weak concentration toward the center<br />
+        III. Detached, no concentration toward the center<br />
+        IV. Not well detached from surrounding star field<br /><br />
+
+        Range in brightness<br />
+        1. Small range 2. Moderate range 3. Large range<br /><br />
+
+        Richness<br />
+        p Poor (<50 stars)<br />
+        m Moderately rich (50-100 stars)<br />
+        r Rich (>100 stars)<br /><br />
+
+        An &quot;n&quot; following the Trumpler type denotes nebulosity in cluster<br /><br />
+
+        Note: the type descriptions from the source used also contained references to other scientific papers.<br />
+        These notes are seen as either &quot;:a&quot; or &quot;:b&quot; at the end of the Trumpler types. For visual purposes<br />
+        they can be ignored.<br /><br />
+
+        ----Shapley-Sawyer concentration rating for globular clusters---<br /><br />
+
+        The values range from 1 to 12, smaller numbers are more<br />
+        concentrated clusters.<br /><br />
+
+        ----Vorontsov-Velyaminov type for planetary nebulae-----<br /><br />
+
+        1. Stellar<br />
+        2. Smooth disk (a, brighter center; b, uniform brightness;<br />
+        c, traces of ring structure)<br />
+        3. Irregular disk (a, very irregular brightness distribution;<br />
+        b, traces of ring structure)<br />
+        4. Ring structure<br />
+        5. Irregular form similar to diffuse nebula<br />
+        6. Anomalous form, no regular structure<br /><br />
+
+        Some very complex forms may combine two types.<br /><br />
+
+        -----Hubble type for galaxies-----<br /><br />
+
+        E elliptical, E0 is roundest to E7 is flattest subgroups; 'd' is dwarf, 'c'is supergiant, 'D' has diffuse halo<br />
+        S Spiral, 'a' has tightly wound arms, 'b' has moderately wound arms and 'c' has loosely wound arms<br />
+        SB Spiral with central bar<br />
+        Ir Irregular<br /><br />
+
+
+        Field Number: 15 Name: NSTS Size: 4<br />
+        Number of stars within a cluster from a study of POSS plates by R. Lynga.<br /><br />
+
+
+        Field Number: 16 Name: BRSTR Size: 5<br />
+        Magnitude of brightest star in cluster or central star of planetary nebula. Much of this information is from Brian Skiff at Lowell Observatory in Flagstaff, Arizona.<br /><br />
+
+
+        Field Number: 17 Name: BCHM Size: 4<br />
+        Catalogs that include this object. There are four catalogs included in this field. B=Best of the NGC from SAC, C=Caldwell catalog from Patrick Moore, H=Herschel 400 from Astronomical League, M=Messier object. The letters for each catalog are aligned under their respective letter abbreviation. Some objects do appear in several catalogs and therefore have several entries.<br /><br />
+
+
+        Field Number: 18 Name: NGC_DESCR Size: 55<br /><br />
+
+        Visual description of the object. Most of these are from the NGC, some are from prominent amateurs. Back issues of Deep Sky Magazine, Astronomy magazine, Sky and Telescope magazine and Burnham's Celestial Handbook are used as a source of some of these descriptions. The descriptions use the abbreviations from the original NGC and Burnham's.<br />
+        There are some observations by Steve Coe, they use these abbreviations:<br /><br />
+
+        ! remarkable object !! very remarkable object<br />
+        am among n north<br />
+        att attached N nucleus<br />
+        bet between neb nebula, nebulosity<br />
+        B bright P w paired with<br />
+        b brighter p pretty (before F,B,L,S)<br />
+        C compressed p preceding<br />
+        c considerably P poor<br />
+        Cl cluster R round<br />
+        D double Ri rich<br />
+        def defined r not well resolved<br />
+        deg degrees rr partially resolved<br />
+        diam diameter rrr well resolved<br />
+        dif diffuse S small<br />
+        E elongated s suddenly<br />
+        e extremely s south<br />
+        er easily resolved sc scattered<br />
+        F faint susp suspected<br />
+        f following st star or stellar<br />
+        g gradually v very<br />
+        iF irregular figure var variable<br />
+        inv involved nf north following<br />
+        irr irregular np north preceding<br />
+        L large sf south following<br />
+        l little sp south preceding<br />
+        mag magnitude 11m 11th magnitude<br />
+        M middle 8... 8th mag and fainter<br />
+        m much 9...13 9th to 13th magnitude<br /><br />
+
+        If you have never dealt with the NGC abbreviations before, perhaps a few examples will help.<br /><br />
+
+        NGC# Description Decoded descriptions<br /><br />
+
+        214 pF, pS, lE, gvlbM pretty faint, pretty small,<br />
+        little elongated, gradually very<br />
+        little brighter in the middle<br /><br />
+
+        708 vF, vS, R very faint, very small, round<br /><br />
+
+        891 B, vL, vmE bright, very large, very much elongated<br /><br />
+
+        7009 !, vB, S remarkable object, very bright, small<br /><br />
+
+        7089 !! B, vL, mbM extremely remarkable object, bright, very rrr, stars mags large, much brighter middle, resolved, 13..... stars 13th magnitude and dimmer<br /><br />
+
+        2099 ! B, vRi, mC remarkable object, bright, very rich, much compressed<br /><br />
+
+        6643 pB,pL,E50,2 st p pretty bright, pretty large, elongated in position angle 50 degrees, two stars preceding<br /><br />
+
+
+        Field Number: 19 Name: NOTES Size: 86<br />
+        Some of this field notes provided by Jim Lucyk. Much of the rest of this information is from a variety of sources. Most of the abbreviations used by the NGC apply here also. Several other common names are included in these notes, so you may search for the &quot;Owl Nebula&quot; in this column. There are some other names listed in this field. If there is a PA in the NOTES that is providing a companion objects' angle in relation to the main object. Another abbreviation that is used often is P w N ( paired with NGC ###) or P w U ( paired with UGC ###). Most of the data on companions to an object have been marked to make recognition easier, but some did not fit into the 60 spaces we alloted. So, the data is always in this order: distance in minutes from main object, PA from main object, then size and mag of companion. Example: P w N4566 @ 4.5,120,0.9X0.7 says that the main object is paired with NGC 4566 and is at 4.5 arcminutes distance, in a direction of PA 120 degrees (ESE) and 0.9'X0.7'in size.<br />
+
+      </ion-content>
+    </ion-modal-view>

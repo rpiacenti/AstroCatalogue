@@ -1,0 +1,28 @@
+<ion-view view-title="Favorites" ng-controller="AstroCatalogueFavoriteCtrl">
+  <ion-content ng-class="{expanded:$scope.isExpanded}">
+    <div class="tabs tabs-dark tabs-icon-top static">
+      <a ui-sref="app.profile" class="tab-item">
+        <i class="icon ion-ios-list-outline"></i> List All
+      </a>
+      <a ui-sref="app.friends" class="tab-item">
+        <i class="icon ion-ios-star-outline"></i> Favorites
+      </a>
+    </div>
+    <ion-list id="astroCatalogueFavorite-list4" class="list padding-margin">
+
+      <ion-item class="item item-icon-right" collection-repeat="item in favoriteObjs" ng-class="$index%2 != 0 ? 'odd' : ''" id="{{item}}">
+
+          {{item}}
+
+          <div class="buttom icon">
+
+          <i class="icon ion-more" ng-click="showObjectStage(item)"></i>
+          <i class="icon ion-ios-trash img-icon"  ng-click="confirmDelete(item)"></i>
+        </div>
+      </ion-item>
+
+    </ion-list>
+
+  </ion-content>
+
+</ion-view>

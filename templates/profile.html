@@ -1,0 +1,66 @@
+<ion-view view-title="Catalogues" ng-controller="AstroCatalogueTodosCtrl">
+  <ion-content ng-class="{expanded:$scope.isExpanded}">
+
+    <div class="tabs tabs-dark tabs-icon-top static">
+      <a ui-sref="app.profile" class="tab-item">
+        <i class="icon ion-ios-list-outline"></i> List All
+      </a>
+      <a ui-sref="app.friends" class="tab-item">
+        <i class="icon ion-ios-star-outline"></i> Favorites
+      </a>
+    </div>
+    <div class="row  bar-assertive" style="padding: 0px;">
+      <div class = "col col-90 ">
+        <label class="item item-select item-assertive" id="astroCatalogueTodos-select1" ng-click="openPopover($event)">
+          <h3>{{mySelect}}</h3>
+        </label>
+      </div>
+      <div class = "col col-10 bar-assertive">
+        <i class="icon ion-funnel item-assertive icon-funnel" ng-click="openPopoverFilter($event)"></i>
+      </div>
+    </div>
+    <!--ng-options="item for item in cat"   item-icon-right -->
+    <ion-list id="astroCatalogueTodos-list4">
+      <ion-item class="item item-icon-right" ng-class="$index%2 != 0 ? 'odd' : ''" collection-repeat="item in objFilter" id="{{item.OBJECT.NAME}}" isOdd="{{$odd}}" ng-click="showObjectStage(item.OBJECT.NAME)">
+          {{item.OBJECT.NAME}} ( {{item.OBJECT.TYPE_DESCR}} )
+          <i class="icon ion-more"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+
+  <div class="bar bar-footer bar-dark">
+    <label class="item item-input">
+      <i class="icon ion-android-search placeholder-icon"></i>
+      <input ng-model="searchTerm" type="text" placeholder="Search for a object ..." ng-keyup="$event.keyCode == 13 && getSearchTerm(searchTerm)">
+    </label>
+  </div>
+
+  <script id="my-popover.html" type="text/ng-template">
+    <ion-popover-view class="fit">
+      <ion-content>
+        <ion-list id="astroCatalogueTodos-popover">
+          <ion-item class="item" style="margin-right: 3px;" ng-repeat="item in cat" id="{{item}}" ng-class="$index%2 != 0 ? 'odd' : ''">
+            <h4 ng-click="showSelectValue(item)">
+              {{item}}
+            </h4>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-popover-view>
+  </script>
+
+  <script id="filter-popover.html" type="text/ng-template">
+    <ion-popover-view class="fit">
+      <ion-content>
+        <ion-list id="astroCatalogueTodos-popover-filter">
+          <ion-item class="item" style="margin-right: 3px;" ng-repeat="item in filters" id="{{item.abrev}}" ng-class="$index%2 != 0 ? 'odd' : ''">
+            <h4 ng-click="setSelectfilter(item.abrev)">
+              {{item.name}}
+            </h4>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-popover-view>
+  </script>
+
+</ion-view>

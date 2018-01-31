@@ -1,0 +1,92 @@
+<ion-view view-title="Object Detail" ng-controller="AstroCatalogueObjectCtrl">
+  <ion-content ng-class="{expanded: $scope.isExpanded}" class="animate-fade-slide-in">
+    <div class="item card-item ink-dark">
+      <div class="row" style="padding: -5px;">
+        <div class="col" style="padding: -5px;"><strong><h5>{{currentObj[0]}}</h5></strong></div>
+        <div class="col" style="padding: -5px;"><h6>Type/Class: {{currentObj[2]}}/{{currentObj[13]}}</h6></div>
+        <div class="col" style="padding: -5px;"><h6>Constelation: {{currentObj[3]}}</h6></div>
+      </div>
+      <div class="row">
+        <div class="col" style="padding: -5px;"><h6>Mag.: {{currentObj[6]}}</h6></div>
+        <div class="col" style="padding: -5px;"><h6>RA: {{currentObj[4]}}</h6></div>
+        <div class="col" style="padding: -5px;"><h6>Max. Dim.: {{currentObj[10]}}</h6></div>        
+      </div>
+      <div class="row">
+        <div class="col" style="padding: -5px;"><h6>Surf. Bright: {{currentObj[7]}}</h6></div>
+        <div class="col" style="padding: -5px;"><h6>Dec: {{currentObj[5]}}</h6></div>        
+        <div class="col" style="padding: -5px;"><h6>Min. Dim.: {{currentObj[11]}}</h6></div>
+      </div>
+      <div class="row">
+        <div class="col" style="padding: -5px;"><h6>Other denomination: {{currentObj[1]}}</h6></div>
+        <div class="col" style="padding: -5px;"><h6></h6></div>
+        <div ng-show="showLnkChartDss" class="col" style="padding: -5px;"><h6><a ng-click="showChart()">Tap here for Chart</a></h6></div>
+
+        <div ng-show="!showLnkChartDss" class="col" style="padding: -5px;"><h6><a ng-click="ShowImg()">Tap here for Image</a></h6></div>
+      </div>
+    </div>
+    <!-- </ion-item> -->
+    <div class="list card">
+      <img ng-src="{{urlDSS}}" ng-click="openModal(1)" border="1">
+    </div>
+    <div class="tiny-text buttom" style="margin-left: 10px;">Tap on image to zoom.
+      <button class="button button-fab button-icon ion-star fab-icon button-assertive-900 ink-dark" ng-click="addFavorite(currentObj[0])">
+      </button>
+
+    </div>
+
+</ion-content>
+
+<script id="my-modal.html" type="text/ng-template">
+  <ion-modal-view  class="image-modal" ng-click="closeModal(1)">
+    <ion-header-bar class="bar bar-header bar-assertive-900">
+      <h5 class="title">{{currentObj[0]}}</h5>
+      <button class="button button-fab button-assertive icon ion-android-close"></button>
+    </ion-header-bar>
+    <ion-scroll zooming="true"
+    direction="xy"
+    delegate-handle="zoom-pane"
+    class="zoom-pane"
+    min-zoom="1"
+    scrollbar-x="false"
+    scrollbar-y="false"
+    overflow-scroll="false">
+    <img ng-src="{{urlDSS}}" >
+  </ion-scroll>
+</ion-modal-view>
+</script>
+
+<!-- <script id="my-modal.html" type="text/ng-template">
+<ion-modal-view>
+<ion-header-bar class="bar bar-header bar-assertive-900">
+<h1 class="title">{{currentObj[6]}}</h1>
+<button class="button button-clear button-dark" ng-click="closeModal(1)">Close</button>
+</ion-header-bar>
+<ion-content class="padding" scroll="false">
+<ion-scroll zooming="true" direction="xy" delegate-handle="zoom-pane" class="zoom-pane" min-zoom="1" scrollbar-x="false" scrollbar-y="false">
+<img ng-src="{{urlDSS}}">
+</ion-scroll>
+</ion-content>
+</ion-modal-view>
+</script> -->
+
+
+<!-- <script id="astroSACDoc.html" type="text/ng-template">
+<ion-modal-view class= "animated fadeInBottom" style="width: 97%; height: 97%; top: 20%; left: 2%; right: 2%; bottom: 5%;">
+<i class="icon ion-ios-close close-modal" ng-click="closeModal(2)"></i>
+<ion-header-bar>
+<h6 class="title">Catalogue Help</h6>
+</ion-header-bar>
+<ion-content>
+<iframe ng-src="templates/astroSACDoc.html" class="tiny-text" style="height: 100%;"></iframe>
+</ion-content>
+</ion-modal-view>
+</script>--> -->
+
+<script id="my-popup.html" type="text/ng-template">
+  <ion-modal-view class= "transparent animated afdeInRight adic-modal" style="width: 100%; top: 90%;">
+    <ion-header-bar class="bar bar-header bar-assertive-900">
+      <h5>{{msg}}</h5>
+    </ion-header-bar>
+  </ion-modal-view>
+</script>
+</ion-view>

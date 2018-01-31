@@ -1,0 +1,246 @@
+/* General
+==================================*/
+h1 {
+  color: #fff;
+  text-shadow: 0 1px 0px #000;
+  font-size: 42px;
+}
+
+
+/* Utilities
+==================================*/
+.title-bordered {
+  border-top: solid 2px #bbb;
+  padding-top: 30px;
+}
+
+p {
+  color: #555;
+  margin: 0 0 25px;
+}
+
+.scroll {
+  height: 100%;
+}
+
+
+/* Menu
+==================================*/
+.menu .bar.bar-header.expanded {
+  transition: all .5s ease-in-out;
+}
+
+.menu-open .bar.bar-header.expanded {
+  background-color: #222;
+}
+
+.menu h2 {
+  bottom: 0;
+  font-size: 18px;
+  left: 16px;
+  position: absolute;
+}
+
+.menu .avatar {
+  height: 88px;
+  width: 88px;
+}
+
+.menu.menu-left * {
+  font-weight: bold;
+}
+
+.menu-open .ion-navicon {
+  transform: rotate(-360deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-open .ion-navicon:before {
+  content: "\f2ca";
+}
+
+
+/* Login
+==================================*/
+.app-icon {
+  background-color: #fff;
+  background: url('../img/cover_mobi.png') center;
+  background-size: cover;
+  border-radius: 50%;
+  height: 125px;
+  margin: 0 auto;
+  width: 125px;
+}
+
+.card-positive{
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.padding-margin{
+  padding: none;
+  margin: 0 0 0 0;
+  line-height: 0.9;
+}
+
+.padding-icon{
+  padding: none;
+  margin: 0 0 0 0;
+  height: 75%;
+}
+
+.top_image img{
+  display: block;
+  margin: 0 auto;
+  width: 245px;
+  height: 245px;
+  opacity: 1;
+}
+
+.transparent {
+  background-color: transparent !important;
+}
+
+.social-login {
+  position: fixed;
+  bottom: 0;
+}
+
+.tiny-text{
+  font-size: 7px !important;
+}
+
+.odd {
+  background-color: #f5f5f5 !important;
+}
+.even {
+  background-color: #bdbdbd !important;
+}
+
+
+
+/* Zoom Pane IMG */
+
+body {
+cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+
+/* full screen image zoom pane */
+
+.zoom-pane {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.zoom-pane .scroll {
+	min-height: 100% !important;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-direction: normal;
+	-moz-box-direction: normal;
+	-webkit-box-orient: horizontal;
+	-moz-box-orient: horizontal;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-align-content: stretch;
+	-ms-flex-line-pack: stretch;
+	align-content: stretch;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.zoom-pane img {
+	width: 100% !important;
+	vertical-align: middle !important;
+}
+
+.image-modal {
+width: 100% !important;
+height: 100% !important;
+top: 0 !important;
+left: 0 !important;
+background: black !important;
+}
+
+.img-icon {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.fab-icon {
+    position: absolute;
+    margin: auto;
+    top: 90%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+.confirm-popup popup {
+    padding: 10px;
+}
+
+.confirm-popup .popup-head {
+    background-color: #b71c1c;
+}
+
+.confirm-popup .popup-title {
+    color: white;
+}
+
+.confirm-popup .popup-buttons .button{
+  background-color: #c62828;
+  color: white;
+  font-size: 12px;
+}
+
+.confirm-popup .popup-buttons .button.activated {
+    background-color: #f44336;
+}
+
+/* Popover position */
+
+.platform-android ion-popover-view.fit {
+  margin-top: 10px !important;
+  margin-left: 15% !important;
+  /*width: 70% !important; */
+
+}
+
+/*  font shadow */
+h1 {
+    text-shadow: 1px 2px #000000;
+}
+
+h2 {
+    text-shadow: 1px 2px #000000;
+}
+
+/* Bar Catalog */
+.icon-funnel{
+  display: inline-block;
+  margin-top: 45% !important;
+  margin-left: 15% !important;
+}
